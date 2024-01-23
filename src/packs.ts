@@ -96,9 +96,7 @@ async function all(
   { guildId, filter }: { guildId?: string; filter?: boolean },
 ): Promise<(Pack[])> {
   const builtins: Pack[] = [
-    { manifest: anilistManifest, _id: '_' },
-    { manifest: vtubersManifest, _id: '_' },
-  ];
+   ];
 
   if (!guildId || !config.communityPacks) {
     if (filter) {
